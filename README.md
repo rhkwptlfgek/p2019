@@ -42,7 +42,7 @@ y=['01년','02년','03년','04년','05년','06년','07년','08년','09년','10�
 df3.columns=['서울']
 #result=stats.linregress(y,df3['서울'])
 #result
-#slope, intercept, r_value, stderr = stats.lin
+#slope, intercept, r_value, stderr = stats.linregress(df3['서울'],y)
 x1 = np.array(df3['서울'])
 slope = -5/13
 intercept = 32
