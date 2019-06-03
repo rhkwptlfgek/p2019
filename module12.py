@@ -25,9 +25,9 @@ df2= df1.dropna(axis=1)
 
 y=['01년','02년','03년','04년','05년','06년','07년','08년','09년','10년','11년','12년','13년','14년','15년','16년','17년']
 df3.columns=['서울']
-#result=stats.linregress(y,df3['서울'])
+#result=stats.linregress(df3['서울'],y)
 #result
-#slope, intercept, r_value, stderr = stats.lin
+#slope, intercept, r_value, stderr = stats.linregress(df3['서울'],y)
 x1 = np.array(df3['서울'])
 slope = -5/13
 intercept = 32
